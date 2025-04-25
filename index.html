@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+<meta charset="UTF-8">
+<title>FreeCodeCamp Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+<h1 id="title">FreeCodeCamp Form</h1>
+<strong>
+<p class="bold" id="description">Awnser the questions to help us make a better experience for you!</p></strong>
+<main>
+<form id="survey-form">
+  <div class="align-input">
+  <!-- Label for name -->
+<label for="name" id= "name-label"><p></p><strong>Enter your full name:</strong><input id="name"type="text" placeholder="Ex:John Hawkins" required/></label>
+<!-- Label for email -->
+<label for="email"id="email-label"><strong>Enter your email:</strong><input id="email" type="email"placeholder="Ex:John@gmail.com" required/></label>
+<!-- Label for age -->
+<label for="number"id="number-label"><strong>Enter your age:</strong><input id="number"min="1"max="120"type="number"placeholder="Ex:1..." required></label></fieldset>
+</div>
+<hr/>
+<p></p>
+<label for="dropdown"><p><strong>What is your area</strong></p>
+<select id="dropdown" required>
+  <option disabled selected>Please select one</option>
+  <option>Full-time employement</option>
+  <option>Unemployed</option>
+  <option>Student</option>
+  <option>Intern or Apprentice</option>
+  <option>I prefer not to say</option>
+  <option>Other</option>
+  </select>
+  <hr/>
+</label>
+  <fieldset id="from">
+    <p class="bold">How much do you already know about FreeCodeCamp?</p>
+  <label for="Yes"><input name="question"id="Yes"type="radio"value="already-knew" class="inline" checked>I already took a course on FreeCodeCamp
+</label>
+  <label for="No"><input  class="inline"name="question"id="No"type="radio"value="didn't-know" >I haven't looked at the resume on the website yet</label></fieldset>
+  <fieldset>
+  <label for="hobbies">
+    <div id="align"><strong>What are your hobbies?</strong></div>
+  <textarea id="hobbies" name="hobbies" rows="5" cols="30" placeholder="I like playing games..." required></textarea></label></fieldset>
+     <input type="checkbox" name="terms" id="agree" value="terms-accepted" required><strong>I agree with the terms</strong>
+ <input type="checkbox" name="share" id="agree" value="accepted-share" required><strong>I accept sharing my information</strong>
+</label>
+<fieldset id="confirmation">
+  <label for="Submit">
+<input id="submit" type="submit"value="Submit" name="Submit">
+  </label>
+  </fieldset>
+</main>
+  </form>
+  </body>
+</html>
